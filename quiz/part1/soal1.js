@@ -9,21 +9,25 @@ let input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ]
 
-
-for(let i=0;i<input.length;i++){
-    for(let x=0;x<input[i].length;x++){
-        if(x === 0){
-            console.log(`Nomor ID: ${input[i][x]}`);
-        }else if(x === 1){
-            console.log(`Nama Lengkap: ${input[i][x]}`);
-        }else if(x === 2){
-            console.log(`TTL: ${input[i][x]} ${input[i][x+1]}`);
-        }else if(x === 3){
-            console.log(`Hobi: ${input[i][x+1]}`);
+function outputData(input){
+    for(let i=0;i<input.length;i++){
+        for(let x=0;x<input[i].length;x++){
+            if(x === 0){
+                console.log(`Nomor ID: ${input[i][x]}`);
+            }else if(x === 1){
+                console.log(`Nama Lengkap: ${input[i][x]}`);
+            }else if(x === 2){
+                console.log(`TTL: ${input[i][x]} ${input[i][x+1]}`);
+            }else if(x === 3){
+                console.log(`Hobi: ${input[i][x+1]}`);
+            }
         }
+        console.log('');
     }
-    console.log('');
 }
+
+outputData(input);
+
 /*
 output yang diharapkan
 
