@@ -13,7 +13,14 @@ Diberikan sebuah function palindrome(kata) yang menerima satu parameter. Functio
 */
 
 function palindrome(kata) {
-  // you can only write your code here!
+    let kataDibalik = '';
+    for(let i=kata.length-1;i>=0;i--) {
+      kataDibalik += kata[i];
+    }
+    if(kataDibalik === kata){
+      return `true`;
+    }
+    return `false`;
 }
 
 // TEST CASES
