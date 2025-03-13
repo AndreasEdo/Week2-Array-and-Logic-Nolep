@@ -6,8 +6,20 @@ note kenapa angka 343 adalah palindrome? karena angka 343 dibalik tetep 343 eaaa
 */
 
 function angkaPalindrome(num) {
-    num++;
-    if(num)
+    let numString = '';
+    let reverseNum = '';
+    do {
+        num++;
+        numString = num.toString();
+        reverseNum = '';
+
+        for (let i = numString.length - 1; i >= 0; i--) {
+            reverseNum += numString[i];
+        }
+
+    } while (numString !== reverseNum); 
+
+    return num;
 }
 
 // TEST CASES
